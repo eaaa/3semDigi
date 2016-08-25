@@ -89,11 +89,21 @@ and (max-device-width : 400px)  {
         <div id="article_list">
 			<?php
 			// find files in folder  and sort by filename
-			$allFiles = scandir($sti,1);
-			sort($allFiles);
+			//$allFiles = scandir($sti,1);
+			//sort($allFiles);
 			// take away . and ..
-			array_splice ($allFiles,0,2);
+			//array_splice ($allFiles,0,2);
+            
+            //$images = glob($sti . "*.{JPG,jpg,gif,png,bmp}", GLOB_BRACE);
+            foreach(glob($sti."/{*.jpg,*.gif,*.JPG,*.bmp}", GLOB_BRACE) as $image) {
+                echo "
+				<article class='show' onClick=\" swop(this) \">		
+					<img src=".$image." />
+					<div class='cover' onClick=\" swop2(this) \"></div>
+				</article>	";
+            }
 			// and show them
+            /*
 			$howMany = count($allFiles);
 			for($i=0;$i<$howMany;$i++){
 //				<article class='gametile' onClick=\" this.innerHTML='' \">
@@ -103,6 +113,7 @@ and (max-device-width : 400px)  {
 					<div class='cover' onClick=\" swop2(this) \"></div>
 				</article>	";
 			}
+            */
 			?>
         </div>
        
