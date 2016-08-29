@@ -18,7 +18,7 @@ include "buttons.php";
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title><?php echo $title ?></title>
         <!-- Styles moved and linked to style.css -->
-        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <link rel="stylesheet" href="stylesheet/style.css" type="text/css">
 	</head>
     <body>
 		<h1 id="titleH1"><?php echo $absent ; ?></h1>
