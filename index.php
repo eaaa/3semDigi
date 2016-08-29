@@ -8,6 +8,8 @@
 //  tryk shuffle og juster bredden på browser efter gruppestørrelsen
 //
 //  Use, modify, and let me know how you improved the product
+
+// Nuppe smiley face!
 //
 //  Sprog, title og andre tilpasninger kan gøres i de filer der includeres herunder
 //
